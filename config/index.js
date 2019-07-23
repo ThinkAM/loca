@@ -19,6 +19,6 @@ module.exports = Object.assign(website, {
     productive: process.env.NODE_ENV === 'production',
     subscription,
     demomode,
-    database: process.env.LOCA_DBNAME || process.env.BASE_DB_URL || 'mongodb://localhost/demodb',
-    EMAILER_URL: process.env.EMAILER_URL ||'http://localhost:8083/emailer',
+    database: process.env.LOCA_DBNAME || process.env.BASE_DB_URL || 'mongodb://localhost:27017/demodb',
+    EMAILER_URL: process.env.EMAILER_URL || 'http://localhost:8083/emailer',
 });
